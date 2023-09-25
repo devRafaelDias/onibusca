@@ -107,6 +107,7 @@ body {
     border-radius: 40px;
     box-shadow: #151018 4px 5px 5px;
     transition: .3s;
+    cursor: pointer;
 }
 
 #left #btnVizualizar:hover {
