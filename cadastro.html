@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="images/Logo_OniBusca.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="cadastroMedia.css">
+</head>
+<body>
+    <span id="logo">
+        <img src="images/logo.png" alt="logo do site">
+    <p><span class="green">Oni</span>Busca</p>
+</span>
+    <main id="main">
+        <div id="left">
+            <img src="images/blob2.png" alt="mancha cinza" id="blob">
+            <img src="images/ponto.png" alt="imagem de um ponto de ônibus" id="ponto">
+        </div>
+
+        <div id="rigth">
+            <form action="" id="form">
+                <h1>CRIE SUA CONTA!</h1>
+
+                <span id="canto">
+                        <label for="nomeUser">Nome de usuário</label>
+                            <input type="text" name="nomeUser" id="nomeUser" placeholder="Qual seu nome?" maxlength="255" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="email@gmail.com" maxlength="255" required>
+                                            
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required>
+                                            
+                            <label for="conSenha">Confirmar Senha</label>
+                            <input type="password" name="conSenha" id="conSenha" placeholder="Confirme sua senha" required>
+                        </span>
+                        <button type="submit" id="btnCad">REGISTRAR-SE</button>
+                            <span id="question">
+                                <p>Já tem uma conta?</p>
+                                <a href="#">Entre agora!</a>
+                            </span>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; OrkaShield</p>
+    </footer>
+</body>
+</html>

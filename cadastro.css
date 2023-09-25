@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gotham-6');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: #151018;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    max-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    font-size: 1.8rem;
+}
+.green {
+    color: #3c554f;
+}
+#logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+#logo img {
+    width: 150px;
+    height: 110px;
+    justify-content: flex-start;
+}
+#logo p {
+    margin-left: -2rem;
+}
+#main {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+#blob {
+    position: absolute;
+    grid-column: 1/2;
+    top: -2rem;
+    left: -15rem;
+    z-index: -1;
+    width: 70%;
+    overflow: hidden;
+    height: 120%;
+    margin-left: -4rem;
+}
+#left {
+    grid-column: 1/2;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 0px 100px;
+}
+
+#left #ponto {
+    width: 100%;
+    max-height: 100%;
+}
+
+#rigth {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rigth #form {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form {
+    background-color: #E6E2E2;
+    border-radius: 3rem;
+    padding: 4rem 12rem 2rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #3C3D3C 2px 5px 20px;
+    transition: .3s;
+}
+#form:hover {
+    box-shadow: #3c554f 2px 5px 10px;
+    transition: .3s;
+}
+#canto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    left: -8rem;
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#form label {
+    justify-self: flex-start;
+    align-self: flex-start;
+    text-align: start;
+    color: #151018;
+    font-size: 2.2rem;
+    padding-bottom: .5rem;
+    font-family: 'Gotham';
+}
+#form h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #151018;
+    margin-bottom: 4rem;
+    font-family: 'Gotham';
+}
+#form input {
+    position: relative;
+    outline: none;
+    width: 150%;
+    border: none;
+    border-radius: 5px 10px 10px 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+#form input:focus {
+    outline: 2px solid #151018;
+}
+
+#form #btnCad {
+    outline: none;
+    border: none;
+    background-color: #3c554f;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    margin: 1.2rem auto;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    transition: .3s;
+    box-shadow: #3C3D3C 4px 9px 5px;
+    font-weight: lighter;
+}
+#form #btnCad:hover {
+    transition: .3s;
+    box-shadow: #151018 2px 9px 5px;
+    width: 85%;
+}
+
+#footer {
+    grid-row: 3;
+    text-align: center;
+    color: #3C3D3C;
+}
+
+#question {
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+}
