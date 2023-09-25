@@ -1,7 +1,7 @@
 @media (max-width: 428px) {
     body {
       grid-template-rows: 1fr 9fr;
-      height: 100vh;
+      overflow-y: scroll;
     }
     img[src="images/ponto.png"], img[src="images/blob2.png"], #left {
         display: none;
