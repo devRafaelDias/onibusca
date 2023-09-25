@@ -1,9 +1,9 @@
 @media (max-width: 428px) {
     body {
-      grid-template-rows: 1fr 9fr;
-      overflow-y: scroll;
+      grid-template-rows: 1fr 8fr;
+      height: 100vh;
     }
-    img[src="images/ponto.png"], img[src="images/blob2.png"], #left {
+    img[src="images/ponto.png"], img[src="images/blob2.png"], #left, #left #ponto {
         display: none;
       }
       #logo {
@@ -15,9 +15,6 @@
       }
       #logo p {
         font-size: 2.5rem;
-      }
-      #left #ponto {
-        display: none;
       }
       #main {
         grid-row: 2/3;
@@ -55,7 +52,6 @@
         padding: 2rem;
       }
 }
-
 #footer {
   font-size: 1.6rem;
   grid-row: 3/4;
