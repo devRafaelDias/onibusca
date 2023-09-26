@@ -30,6 +30,7 @@ body {
     justify-content: start;
     align-items: center;
     font-size: 3rem;
+    font-family: 'Gotham';
     font-weight: bold;
 }
 #logo img {
@@ -39,6 +40,7 @@ body {
 }
 #logo p {
     margin-left: -2rem;
+    font-weight: bold;
 }
 #main {
     display: grid;
@@ -48,7 +50,7 @@ body {
     position: absolute;
     grid-column: 1/2;
     top: -2rem;
-    left: -15rem;
+    left: -20rem;
     z-index: -1;
     width: 70%;
     overflow: hidden;
