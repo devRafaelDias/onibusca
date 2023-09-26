@@ -42,6 +42,10 @@ body {
     margin-left: -2rem;
     font-weight: bold;
 }
+#linkBack {
+    text-decoration: none;
+    color: #151018;
+}
 #main {
     display: grid;
     grid-template-columns: 1fr, 1fr;
