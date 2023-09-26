@@ -1,7 +1,7 @@
-@media (max-width: 428px) {
+@media (max-width: 480px) {
     body {
       grid-template-rows: 1fr 9fr;
-      overflow-y: scroll;
+      overflow-y: auto;
       height: 100vh;
     }
     img[src="images/ponto.png"], img[src="images/blob2.png"], #left, #left #ponto {
@@ -57,4 +57,27 @@
 #footer {
   font-size: 1.6rem;
   grid-row: 4;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  #main {
+    align-self: center;
+    justify-self: center;
+  }
+  #left {
+    display: none;
+  }
+  #ponto {
+    display: none;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+  }
 }
