@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
     body {
       grid-template-rows: 1fr 9fr;
-      overflow-y: auto;
+      overflow-y: scroll;
       height: 100vh;
     }
     img[src="images/ponto.png"], img[src="images/blob2.png"], #left, #left #ponto {
@@ -9,6 +9,7 @@
       }
       #logo {
         grid-row: 1/2;
+        margin-bottom: 2rem;
       }
       #logo img {
         width: 100px;
@@ -22,7 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
       }
       #form {
         grid-column: 1/2;
