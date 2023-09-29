@@ -48,13 +48,13 @@ body {
 }
 #main {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 9fr, 1fr;
 }
 #blob {
     position: absolute;
     grid-column: 1/2;
     top: -2rem;
-    left: -20rem;
+    left: -30rem;
     z-index: -1;
     width: 70%;
     overflow: hidden;
@@ -69,9 +69,10 @@ body {
     padding: 100px 0px 0px 100px;
 }
 
-#left #ponto {
-    width: 100%;
-    max-height: 100%;
+#left #onibus {
+    position: relative;
+    padding-bottom: 20rem;
+    animation: mover 2.5s ease-out infinite;
 }
 
 #rigth {
@@ -88,11 +89,12 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
 #form {
+    justify-self: end;
+    align-self: center;
     background-color: #E6E2E2;
     border-radius: 3rem;
-    padding: 4rem 12rem 2rem 12rem;
+    padding: 14rem 12rem 10rem 14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,10 +127,13 @@ body {
     font-family: 'Gotham';
 }
 #form h1 {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 4rem;
+    width: 200%;
+    top: -10rem;
+    left: 6rem;
+    position: relative;
+    text-align: start;
     color: #151018;
-    margin-bottom: 4rem;
     font-family: 'Gotham';
 }
 #form input {
@@ -137,9 +142,9 @@ body {
     width: 150%;
     border: none;
     border-radius: 5px 10px 10px 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding: 15px;
+    font-size: 2rem;
 }
 #form input:focus {
     outline: 2px solid #151018;
@@ -172,8 +177,30 @@ body {
     text-align: center;
     color: #3C3D3C;
 }
-
-#question {
+#trocarSenha {
+    margin: 1rem 0 2.5rem 0;
+}
+#question a{
     text-align: center;
+    padding: 3rem;
     width: 100%;
+    text-decoration: none;
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 10px;
+    } 
+    50% {
+        left: 20;
+    }
+    75% {
+        left: 10px;
+    }
+    100% {
+        left: 0;
+    }
 }

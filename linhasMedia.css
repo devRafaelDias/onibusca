@@ -29,9 +29,15 @@
         grid-column: 1/2;
         padding: 2rem 6rem 1rem 6rem;
         width: 90vw;
+
       }
       #form h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        position: relative;
+        top: 0;
+        text-align: start;
+        padding-left: 2rem;
+        margin-bottom: 4rem;
       }
       #form input {
         width: 140%;
@@ -49,6 +55,10 @@
       #form #btnCad:hover {
         width: 78%;
         font-size: 1.6rem;
+      }
+      span {
+        width: 100%;
+        text-align: center;
       }
       #question {
         width: 110%;
@@ -73,7 +83,7 @@
   #left {
     display: none;
   }
-  #ponto {
+  #onibus {
     display: none;
   }
   #footer {
