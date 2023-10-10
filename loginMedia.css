@@ -4,7 +4,7 @@
       overflow-y: scroll;
       height: 100vh;
     }
-    img[src="images/ponto.png"], img[src="images/blob2.png"], #left, #left #ponto {
+    img[src="images/ponto.png"], img[src="images/blob2.png"], #left, #left #onibus{
         display: none;
       }
       #logo {
@@ -41,7 +41,7 @@
       }
       #form input {
         width: 130%;
-        padding: 10px;
+        padding: 15px;
       }
       #canto {
         left: -4rem;
@@ -73,7 +73,7 @@
   grid-row: 4;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   body {
     display: flex;
     flex-direction: column;
@@ -84,9 +84,6 @@
     justify-self: center;
   }
   #left {
-    display: none;
-  }
-  #ponto {
     display: none;
   }
   #footer {

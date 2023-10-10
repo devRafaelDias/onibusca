@@ -9,58 +9,63 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="logo">
-            <img id="Logo" src="images/LogoOniBusca.png" alt="">
-            <p id="Oni">
-                <strong>
-                    <span style="color: #3c3c3c;">Oni <br><br></span>Busca <br><br>
-                </strong>
-            </p>
+        <nav id="menu">
+            <a href="index.html" id="linkBack">
+            <span id="logo">
+                <img src="images/logo.png" alt="logo do site" id="logoImg">
+            <p><span class="green">Oni</span>Busca</p>
+        </a>
+        </span>
+        <ul>
+            <li><a href="#">Ajuda</a></li>
+        <span id="meuPerfil">
+            <li><a href="#">Meu perfil</a></li>
+            <li><img src="images/user.png" alt="perfil"></li>
+        </span>
+        </ul>
+    </nav>
+
+    <main id="main">
+
+        <div id="left">
+            <img id="woman" src="images/men.png" alt="">
         </div>
+        <div id="rigth">
+            
+            <div id="tableLinhas">
+                <h1>VISUALIZAR LINHAS</h1>
+                <table>
+                        <tr id="tableHead">
+                            <td>LINHA</td>
+                            <td>PARTIDA</td>
+                            <td>CHEGADA</td>
+                        </tr>
+                        <tr>
+                            <td>Centro - IFSP</td>
+                            <td>7:00h</td>
+                            <td>8:00h</td>
+                            <td class="plus"><button><img src="images/plus.png" alt="expandir" class="plus"></button></td>
+                        </tr>
+                        <tr>
+                            <td>IFSP - Centro</td>
+                            <td>17:10h</td>
+                            <td>18:10h</td>
+                            <td class="plus"><button><img src="images/plus.png" alt="expandir" class="plus"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Bairro - Centro</td>
+                            <td>6:00h</td>
+                            <td>6:40h</td>
+                            <td class="plus"><button><img src="images/plus.png" alt="expandir" class="plus"></button></td>
+                        </tr>
+                        <tr >
+                            <td colspan="4"><button id="btnMore">CARREGAR MAIS</button></td>
+                        </tr>
+                </table>
+            </div>
 
-        <div class="menu-bar">
-            <a id="VerLinhas" href="#">Visualizar Linhas</a>
-            <a id="Ajuda" href="#">Ajuda</a>
-            <a id="MeuPerfil" href="#">Meu Perfil  <img id="foto-user" src="images/base.png" alt="Super"></a>
         </div>
-
-    </div>
-
-    <img id="woman" src="images/men.png" alt="">
-
-    <div id="caixa">
-        <h1>VISUALIZAR LINHAS</h1>
-      <table border="1">
-          <tr>
-              <th>LINHA</th>
-              <th>PARTIDA</th>
-              <th>CHEGADA</th>
-          </tr>
-          <tr>
-              <td>sla</td>
-              <td>5:00</td>
-              <td>2:00</td>
-              <td><a href="images/LogoOniBusca.png"><img class="plus" src="images/plus.png" alt="plus"></a></td>
-          </tr> 
-          <tr>
-              <td>sla</td>
-              <td>5:00</td>
-              <td>2:00</td>
-              <td><a href="images/LogoOniBusca.png"><img class="plus" src="images/plus.png" alt="plus"></a></td>
-          </tr> 
-          <tr>
-              <td>sla</td>
-              <td>5:00</td>
-              <td>2:00</td>
-              <td><a href="images/LogoOniBusca.png"><img class="plus" src="images/plus.png" alt="plus"></a></td>
-          </tr>
-
-        </table>
-
-        <a id="button" href="images/LogoOniBusca.png">CARREGAR MAIS</a>
-
-    </div>
+    </main>
     
     <footer id="footer">
         <p>&copy; OrkaShield</p>
