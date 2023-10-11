@@ -1,0 +1,59 @@
+@media (max-width: 480px) {
+    #menu li a {
+        font-size: 2rem;
+        text-align: center;
+    }
+    #menu li a:hover {
+        color: #000;
+        font-size: 2.1rem;
+    }
+    #menu ul span:nth-child(2){
+        color: aqua;
+        padding-left: 1.5rem;
+    }
+    #menu ul {
+        margin-right: -3.5rem;
+    }
+    #menu ul li {
+        padding-left: 1rem;
+        text-wrap: nowrap;
+        height: 100%;
+        vertical-align: baseline;
+    }
+
+    #menu #logoImg {
+        width: 100px;
+        height: 70px;
+    }
+
+    #menu #logo {
+        font-size: 2.5rem;
+        vertical-align: baseline;
+    }
+    #meuPerfil img{
+        width: 40px;
+        margin-right: -2rem;
+    }
+
+    #left, #woman {
+        display: none;
+    }
+
+    #rigth {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+    }
+    #tableLinhas {
+        width: 90%;
+        height: 100%;
+    }
+    #tableLinhas h1 {
+        width: 100%;
+        font-size: 3.5rem;
+        padding: 3rem 0;
+    }
+    #btnMore {
+        width: 60%;
+    }
+}
