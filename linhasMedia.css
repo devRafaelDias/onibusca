@@ -1,20 +1,37 @@
 @media (max-width: 480px) {
-    #menu li a {
-        font-size: 2rem;
-        text-align: center;
+
+    html {
+        height: 100vh;
     }
+
+    body {
+        grid-template-rows: 1fr 9fr;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        zoom: 1;
+    }
+
+    #menu {
+        grid-row: 1/2;
+    }
+    #menu li a {
+        font-size: 1.6rem;
+        text-align: center;
+        vertical-align: center;
+    }
+
     #menu li a:hover {
         color: #000;
-        font-size: 2.1rem;
+        font-size: 1.7rem;
     }
+
     #menu ul span:nth-child(2){
         color: aqua;
-        padding-left: 1.5rem;
+        padding-left: 1rem;
     }
-    #menu ul {
-        margin-right: -3.5rem;
-    }
-    #menu ul li {
+    #menu ul li{
         padding-left: 1rem;
         text-wrap: nowrap;
         height: 100%;
@@ -27,9 +44,10 @@
     }
 
     #menu #logo {
-        font-size: 2.5rem;
-        vertical-align: baseline;
+        font-size: 2rem;
+        margin-right: 2rem;
     }
+
     #meuPerfil img{
         width: 40px;
         margin-right: -2rem;
@@ -39,21 +57,106 @@
         display: none;
     }
 
+    #main {
+        max-width: 100vw;
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        
+    }
+
     #rigth {
         display: flex;
+        grid-row: 2/3;
+        grid-column: 1/2;
         height: 100%;
-        justify-content: center;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
     }
+
     #tableLinhas {
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
+
     #tableLinhas h1 {
         width: 100%;
-        font-size: 3.5rem;
-        padding: 3rem 0;
+        font-size: 2.5rem;
+        padding: 2rem 0;
     }
+
+    #tableHead td{
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    table {
+        padding: 0rem;
+        border-spacing: .8rem 1rem;
+        line-height: 20px;
+    }
+
+    tr {
+        height: 2rem;
+    }
+
+    td {
+        width: 10%;
+        height: min-content;
+        font-size: 1.6rem;
+        padding: 3px;
+        font-size: 1.6rem;
+        text-wrap: nowrap;
+    }
+
+    .plus button {
+        width: 70%;
+        height: 70%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 22px;
+    }
+
+    .plus img {
+        height: 40px;
+        width: 40px;
+    } 
+
     #btnMore {
         width: 60%;
+        text-wrap: nowrap;
+    }
+    #footer {
+        grid-row: 3/4;
     }
 }
+
+@media (max-width: 1000px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+    }
+    #main {
+      align-self: center;
+      justify-self: center;
+      height: 80%;
+    }
+    #rigth {
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #left {
+      display: none;
+    }
+    #footer {
+      position: absolute;
+      bottom: 0;
+      align-self: center;
+    }
+  }
