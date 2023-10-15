@@ -20,7 +20,7 @@
     }
     #menu #logo {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
     #menu #logo p {
         font-size: 3rem;
@@ -31,11 +31,12 @@
         justify-content: center;
     }
     #menu ul li {
-        padding-left: 15px;
+        padding-left: 8px;
     }
     #menu li a {
         font-size: 1.3rem;
         font-weight: bold;
+        text-wrap: nowrap;
     }
     #menu li a:hover {
         color: #000;

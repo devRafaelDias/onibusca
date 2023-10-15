@@ -2,6 +2,7 @@
     body {
       grid-template-rows: 1fr 9fr;
       overflow-y: scroll;
+      overflow: hidden;
       height: 100vh;
     }
     img[src="images/ponto.png"], img[src="images/blob2.png"], #left, #left #onibus{
