@@ -1,5 +1,10 @@
 @media (max-width: 480px) {
-
+    * {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        font-family: 'Gotham';
+    }
     html {
         height: 100vh;
     }
@@ -26,13 +31,8 @@
         color: #000;
         font-size: 1.7rem;
     }
-
-    #menu ul span:nth-child(2){
-        color: aqua;
-        padding-left: 1rem;
-    }
     #menu ul li{
-        padding-left: 1rem;
+        padding-left: 1.5rem;
         text-wrap: nowrap;
         height: 100%;
         vertical-align: baseline;
@@ -49,8 +49,13 @@
     }
 
     #meuPerfil img{
-        width: 40px;
+        width: 30px;
+        margin-bottom: -5px;
         margin-right: -2rem;
+    }
+
+    #meuPerfil img:hover {
+        width: 35px;
     }
 
     #left, #woman {
@@ -59,30 +64,38 @@
 
     #main {
         max-width: 100vw;
+        height: 100%;
         grid-template-columns: 1fr;
         align-items: flex-start;
-        
     }
 
     #rigth {
+        position: relative;
         display: flex;
         grid-row: 2/3;
         grid-column: 1/2;
         height: 100%;
-        width: 100%;
-        justify-content: start;
+        max-width: 100vw;
+        justify-content: center;
         align-items: center;
+        top: -4rem;
     }
 
     #tableLinhas {
-        width: 100%;
+        position: relative;
+        width: 90%;
         height: 100%;
+        margin: 0 2rem 0 2rem;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #tableLinhas h1 {
         width: 100%;
         font-size: 2.5rem;
-        padding: 2rem 0;
+        padding: 2rem 0 1rem 0;
     }
 
     #tableHead td{
@@ -91,43 +104,53 @@
     }
 
     table {
-        padding: 0rem;
-        border-spacing: .8rem 1rem;
-        line-height: 20px;
+        position: relative;
+        left: 1.5rem;
+        width: 100%;
     }
+
 
     tr {
-        height: 2rem;
+      height: 1rem;
+      width: 100%;
     }
 
-    td {
-        width: 10%;
-        height: min-content;
-        font-size: 1.6rem;
-        padding: 3px;
-        font-size: 1.6rem;
-        text-wrap: nowrap;
+    table td {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        width: 100%;
+        padding: 5px;
+        text-wrap: wrap;
     }
 
     .plus button {
-        width: 70%;
-        height: 70%;
-        padding: 20px;
+        position: relative;
+        left: -.5rem;
+        width: 60%;
+        height: 60%;
+        padding: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 22px;
+        border-radius: 15px;
     }
 
     .plus img {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
     } 
 
     #btnMore {
-        width: 60%;
+        width: 50%;
+        font-size: 1.8rem;
         text-wrap: nowrap;
+        margin: 0 auto;
     }
+
+    #btnMore:hover {
+        font-size: 1.9rem;
+    }
+
     #footer {
         grid-row: 3/4;
     }
