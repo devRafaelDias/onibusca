@@ -64,7 +64,7 @@ body {
     width: 5.1rem;
 }
 
-#menu ul li:nth-child(2) {
+#menu ul:nth-child(2) {
     padding-left: 2rem !important;
 }
 #menu ul li {
