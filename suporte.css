@@ -21,8 +21,13 @@ html {
 body {
     width: 100vw;
     display: grid;
+    height: 100vh;
     grid-template-rows: 1fr 9fr;
     font-size: 1.8rem;
+}
+
+#negrito {
+    font-weight: bolder;
 }
 
 .green {
@@ -111,8 +116,9 @@ body {
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
+    justify-self: center;
     align-items: center;
-    width: 100vw;
+    width: 90%;
     padding-top: 0rem;
 }
 
@@ -134,17 +140,26 @@ body {
 
 #texto p {
     margin-bottom: 3rem;
-    font-family: 'Poppins';
+    font-family: 'Gotham';
     font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
 }
+
+#texto a {
+    text-decoration: none;
+}
+
 p::first-letter {
     padding-left: 2.5rem;
 }
+
 #orka {
     padding-left: 2.5rem;
 }
 
 #footer {
+    grid-row: 3;
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -155,7 +170,7 @@ p::first-letter {
 
 @media (max-width: 480px) {
     html {
-        height: min-content;
+        height: 100vh;
     }
 
     body {
@@ -167,9 +182,10 @@ p::first-letter {
 
     #menu {
         grid-row: 1/2;
+        padding: 0 2rem 0 1rem;
     }
     #menu li a {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-align: center;
         vertical-align: center;
     }
@@ -180,7 +196,7 @@ p::first-letter {
     }
     
     #menu ul li{
-        padding-left: 1.5rem;
+        padding-left: 1rem;
         text-wrap: nowrap;
         height: 100%;
         vertical-align: baseline;
@@ -196,8 +212,8 @@ p::first-letter {
     }
 
     #menu #logo {
-        font-size: 2rem;
-        margin-right: 2rem;
+        font-size: 1.8rem;
+        margin-right: 6rem;
     }
 
     #meuPerfil img{
@@ -215,16 +231,22 @@ p::first-letter {
     }
 
     #texto {
-        padding: 1.5rem;
-        width: 90%;
+        padding: 2rem;
+        width: 100%;
     }
 
     #texto p {
-        font-size: 1.8rem;
-        word-wrap: break-word;
+        line-height: 4rem;
+        font-size: 3rem;
+        word-break: keep-all;
+    }
+
+    #texto a {
+        font-size: 2.5rem;
     }
 
     #footer {
+        grid-row: 3;
         width: 90%;
     }
 }
