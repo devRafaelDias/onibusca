@@ -14,7 +14,6 @@ html {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     overflow: hidden;
-    overflow-y: auto;
     height: 100vh;
 }
 
@@ -109,23 +108,88 @@ body {
 }
 
 #menu p {
-    margin: -40px;
+    margin: -30px;
 }
 
 #main {
-    grid-template-rows: 3fr 1fr 6fr;
-}
-
-#main #userName {
+    padding: 6rem;
     display: flex;
+    flex-direction: column;
 }
 
-#userName p {
+#main #userInfo {
+    display: flex;
+    grid-row: 1/2;
+}
+
+#userInfo p:first-child {
     vertical-align: center;
+    font-size: 6rem;
+    padding-top: 5rem;
+    margin-left: 2rem;
+}
+
+#userInfo p:nth-child(2){
+    vertical-align: center;
+    font-size: 3rem;
+    margin-left: 2rem;
 }
 
 #main img {
     height: 200px;
+    vertical-align: baseline;
+}
+
+#local {
+    display: flex;
+}
+
+#location {
+    width: 40px;
+    margin-top: -8rem;
+}
+
+#sobreMim {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    width: 80%;
+    height: 100%;
+    background-color: #E6E2E2;
+    border-radius: 2.2rem;
+    padding: 3rem;
+}
+
+#sobreMim p {
+    font-size: 2rem;
+}
+
+#dadosPessoais {
+    margin-top: 8rem;
+}
+
+#btnEditar {
+    position: relative;
+    background-color: #3c554f;
+    color: #fff;
+    padding: 2rem;
+    font-family: 'Gotham';
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2.5rem;
+    align-self: center;
+    bottom: 0;
+    width: 20%;
+    transition: .3s;
+    box-shadow: 1px 2px 2px #151018;
+}
+
+#btnEditar:hover {
+    transition: .3s;
+    width: 22%;
+    box-shadow: 1px 2px 2px #3c554f;
 }
 
 #footer {
