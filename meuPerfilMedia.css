@@ -1,0 +1,127 @@
+@media (max-width: 480px) {
+    html {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #menu {
+        grid-row: 1/2;
+    }
+    #menu li a {
+        font-size: 1.6rem;
+        text-align: center;
+        vertical-align: -2px;
+    }
+
+    #menu li a:hover {
+        color: #000;
+        font-size: 1.7rem;
+    }
+    
+    #menu ul li{
+        padding-left: 1.5rem;
+        text-wrap: nowrap;
+        height: 100%;
+        vertical-align: center;
+    }
+
+    #menu #logoImg {
+        width: 100px;
+        height: 70px;
+    }
+
+    #menu #logo {
+        font-size: 2rem;
+        margin-right: 3rem;
+        margin-left: 1rem;
+    }
+
+    #logo p {
+        margin-left: -20px;
+    }
+
+    #meuPerfil img{
+        width: 30px;
+        margin-bottom: -5px;
+        margin-right: -2rem;
+    }
+
+    #meuPerfil img:hover {
+        width: 35px;
+    }
+
+    #main {
+        padding: 3rem;
+    }
+
+    #userInfo p:first-child {
+        vertical-align: center;
+        font-size: 2.5rem;
+        padding-top: 0rem;
+        margin-left: 2rem;
+    }
+    
+    #userInfo p:nth-child(2){
+        vertical-align: center;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    #main img {
+        height: 80px;
+        vertical-align: baseline;
+    }
+
+    #location {
+        width: 20px;
+        margin-top: -2.5rem;
+    }
+
+    #userInfo p:nth-child(2){
+        font-size: 2rem;
+    }
+
+    #sobreMim {
+        width: 100%;
+        padding: 2rem;
+        align-self: center;
+    }
+
+    #main #mailPng {
+        margin-top: -5px;
+        height: 4rem;
+    }
+
+    #sobreMim h1 {
+        font-size: 3rem;
+    }
+
+    #sobreMim p {
+        font-size: 2rem;
+    }
+    
+    #dadosPessoais {
+        margin-top: 8rem;
+    }
+
+    #btnEditar {
+        width: 55%;
+        font-size: 1.6rem;
+        text-wrap: nowrap;
+    }
+
+    #btnEditar:hover {
+        width: 57%;
+    }
+
+    #footer {
+        width: 90%;
+    }
+}
