@@ -79,9 +79,9 @@
         vertical-align: baseline;
     }
 
-    #location {
-        width: 25px;
-        margin-top: -2.5rem;
+    #maleta {
+        width: 30px;
+        margin-top: -.5rem;
     }
 
     #userInfo p:nth-child(2){
