@@ -54,6 +54,28 @@
         width: 110%;
         padding: 2rem;
       }
+      #eye {
+        width: 30px;
+        padding: 0;
+    }
+    
+    #mostraSenha {
+        display: inline-flex;
+        width: 143%;
+        padding: 0;
+    }
+    
+    #mostrar {
+        border: none;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+        height: min-content;
+        width: min-content;
+        position: relative;
+        left: -4rem;
+        top: 1.2rem;
+    }
 }
 #footer {
   font-size: 1.6rem;

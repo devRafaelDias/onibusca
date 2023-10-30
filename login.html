@@ -28,7 +28,10 @@
                             <input type="email" name="email" id="email" placeholder="email@gmail.com" maxlength="255" >
                                             
                             <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="senha" placeholder="Insira sua senha" >
+                            <span id="mostraSenha">
+                                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" >
+                                <button id="mostrar" type="button"><img src="images/olhoOpen.png" alt="" id="eye"></button>
+                            </span>
                         </span>
                         <button type="submit" id="btnCad"><a href="linhas.html">LOGIN</a></button>
                         <span id="trocarSenha">
@@ -45,5 +48,23 @@
     <footer id="footer">
         <p>&copy; OrkaShield</p>
     </footer>
+
+    <script>
+        let input = document.getElementById('senha')
+        let btn = document.getElementById('mostrar')
+        let img = document.getElementById('eye')
+
+        btn.addEventListener('click', function mostrarSenha() {
+            if(input.type === 'password')  {
+                img.src = './images/olhoClose.png'
+                input.type = 'text'
+            }          
+            else {
+                img.src = './images/olhoOpen.png'
+                input.type = 'password'
+            }
+                
+        })
+    </script>
 </body>
 </html>

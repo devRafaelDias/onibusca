@@ -138,8 +138,8 @@ body {
     border: none;
     border-radius: 5px 10px 10px 5px;
     margin-bottom: 15px;
-    padding: 10px;
-    font-size: 1.8rem;
+    padding: 15px;
+    font-size: 2rem;
 }
 #form input:focus {
     outline: 2px solid #151018;
@@ -176,4 +176,25 @@ body {
 #question {
     text-align: center;
     width: 100%;
+}
+
+#eye {
+    width: 40px;
+}
+
+#mostraSenha {
+    display: flex;
+    width: 163%;
+}
+
+#mostrar {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    height: min-content;
+    width: min-content;
+    position: relative;
+    left: -6rem;
+    top: 8px;
 }

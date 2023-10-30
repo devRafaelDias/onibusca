@@ -149,6 +149,26 @@ body {
 #form input:focus {
     outline: 2px solid #151018;
 }
+#eye {
+    width: 40px;
+}
+
+#mostraSenha {
+    display: flex;
+    width: 160%;
+}
+
+#mostrar {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    height: min-content;
+    width: min-content;
+    position: relative;
+    left: -6rem;
+    top: 6px;
+}
 
 #form #btnCad {
     outline: none;
