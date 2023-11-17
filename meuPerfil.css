@@ -125,7 +125,7 @@ body {
 #userInfo p:first-child {
     vertical-align: center;
     font-size: 6rem;
-    padding-top: 5rem;
+    padding-top: 1rem;
     margin-left: 2rem;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 #main img {
-    height: 200px;
+    height: 150px;
     vertical-align: baseline;
 }
 
@@ -146,7 +146,7 @@ body {
 
 #location {
     width: 40px;
-    margin-top: -8rem;
+    margin-top: -4rem;
 }
 
 #sobreMim {
@@ -159,15 +159,15 @@ body {
     height: 100%;
     background-color: #E6E2E2;
     border-radius: 2.2rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 #sobreMim p {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #dadosPessoais {
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 
 #dadosPessoais p {
@@ -192,8 +192,9 @@ body {
     border: none;
     border-radius: 2.5rem;
     align-self: center;
+    text-wrap: nowrap;
     bottom: 0;
-    margin-top: 10rem;
+    margin-top: 4rem;
     width: 20%;
     transition: .3s;
     cursor: pointer;
