@@ -1,6 +1,7 @@
 @media (max-width: 480px) {
     html {
         height: 100vh;
+        width: 100vw;
         overflow-y: auto;
     }
 
@@ -13,6 +14,7 @@
 
     #menu {
         grid-row: 1/2;
+        margin: 1rem 0;
     }
     #menu li a {
         font-size: 1.6rem;
@@ -24,6 +26,10 @@
         color: #000;
         font-size: 1.7rem;
     }
+
+    #menu ul {
+        margin-right: 4rem;
+    }
     
     #menu ul li{
         padding-left: 1.5rem;
@@ -33,18 +39,18 @@
     }
 
     #menu #logoImg {
-        width: 100px;
-        height: 70px;
+        width: 80px;
+        height: 60px;
     }
 
     #menu #logo {
         font-size: 2rem;
         margin-right: 3rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
 
     #logo p {
-        margin-left: -20px;
+        margin-left: -15px;
     }
 
     #meuPerfil img{
@@ -58,7 +64,8 @@
     }
 
     #main {
-        padding: 3rem;
+        padding: 3rem 2rem 3rem 2rem;
+        margin: 0;
     }
 
     #userInfo p:first-child {
@@ -75,13 +82,13 @@
     }
 
     #main img {
-        height: 80px;
+        height: 60px;
         vertical-align: baseline;
     }
 
-    #location {
-        width: 25px;
-        margin-top: -2.5rem;
+    #maleta {
+        width: 2rem;
+        padding-bottom: 23px;
     }
 
     #userInfo p:nth-child(2){
@@ -91,12 +98,20 @@
     #sobreMim {
         width: 100%;
         padding: 2rem;
-        align-self: center;
+        
+    }
+
+    #sobreMim p {
+        font-size: 1.8rem;
+        text-wrap: wrap;
     }
 
     #main #mailPng {
         margin-top: -5px;
         height: 4rem;
+    }
+    #main #telefonePng {
+        height: 30px;
     }
 
     #sobreMim h1 {
@@ -112,9 +127,11 @@
     }
 
     #btnEditar {
+        position: relative;
         width: 55%;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-wrap: nowrap;
+        margin: 0 auto;
     }
 
     #btnEditar:hover {

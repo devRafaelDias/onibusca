@@ -13,16 +13,20 @@ html {
     color: #151018;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    overflow: hidden;
-    overflow-y: auto;
+    overflow-x: hidden;
     height: 100vh;
 }
 
 body {
     width: 100vw;
     display: grid;
+    height: 100vh;
     grid-template-rows: 1fr 9fr;
     font-size: 1.8rem;
+}
+
+#negrito {
+    font-weight: bolder;
 }
 
 .green {
@@ -104,127 +108,124 @@ body {
 }
 
 #menu p {
-    margin: -40px;
+    margin: -30px;
 }
 
 #main {
-    grid-row: 2/3;
+    padding: 6rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    padding-top: 0rem;
 }
 
-#main h1{
-    font-family: 'Gotham';
-    text-align: center;
+#main #userInfo {
+    display: flex;
+    grid-row: 1/2;
+}
+
+#userInfo p:first-child {
+    vertical-align: center;
     font-size: 6rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+}
+
+#userInfo p:nth-child(2){
+    vertical-align: center;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+#main img {
+    height: 150px;
+    vertical-align: baseline;
+}
+
+#local {
+    display: flex;
+}
+
+#userInfo {
     margin-bottom: 3rem;
 }
 
-#texto {
-    background-color: #E6E2E2;
+#userInfo #maleta {
+    height: 40px;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+
+#sobreMim {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    align-self: center;
     width: 80%;
     height: 100%;
-    font-size: 3rem;
-    border-radius: 2.2rem 2.2rem 0 0;
-    padding: 5rem;
+    background-color: #E6E2E2;
+    border-radius: 2.2rem;
+    padding: 3rem;
 }
 
-#texto p {
-    margin-bottom: 3rem;
-    font-family: 'Poppins';
-    font-weight: bold;
+#sobreMim p {
+    font-size: 3rem;
 }
-p::first-letter {
-    padding-left: 2.5rem;
+
+#dadosPessoais {
+    margin-top: 8rem;
 }
-#orka {
-    padding-left: 2.5rem;
+
+#dadosPessoais p {
+    display: flex;
+}
+
+#dadosPessoais:nth-child(2) p{
+    margin-top: 2rem;
+}
+
+#main #mailPng {
+    width: 40px;
+    height: 50px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+#main #telefonePng {
+    width: 40px;
+    height: 45px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+#btnAvaliar {
+    position: relative;
+    background-color: #3c554f;
+    color: #fff;
+    padding: 2rem;
+    font-family: 'Gotham';
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2.5rem;
+    align-self: center;
+    bottom: 0;
+    margin-top: 4rem;
+    text-wrap: nowrap;
+    width: max-content;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px #151018;
+}
+
+#btnAvaliar:hover {
+    transition: .3s;
+    box-shadow: 1px 2px 2px #3c554f;
 }
 
 #footer {
+    grid-row: 3;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     color: #151018;
-    background-color: #E6E2E2;
-}
-
-
-@media (max-width: 480px) {
-    html {
-        height: min-content;
-    }
-
-    body {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        overflow-y: scroll;
-    }
-
-    #menu {
-        grid-row: 1/2;
-    }
-    #menu li a {
-        font-size: 1.6rem;
-        text-align: center;
-        vertical-align: center;
-    }
-
-    #menu li a:hover {
-        color: #000;
-        font-size: 1.7rem;
-    }
-    
-    #menu ul li{
-        padding-left: 1.5rem;
-        text-wrap: nowrap;
-        height: 100%;
-        vertical-align: baseline;
-    }
-
-    #linhas {
-        display: none;
-    }
-
-    #menu #logoImg {
-        width: 100px;
-        height: 70px;
-    }
-
-    #menu #logo {
-        font-size: 2rem;
-        margin-right: 2rem;
-    }
-
-    #meuPerfil img{
-        width: 30px;
-        margin-bottom: -5px;
-        margin-right: -2rem;
-    }
-
-    #meuPerfil img:hover {
-        width: 35px;
-    }
-
-    #main h1 {
-        font-size: 4rem;
-    }
-
-    #texto {
-        padding: 1.5rem;
-        width: 90%;
-    }
-
-    #texto p {
-        font-size: 1.8rem;
-        word-wrap: break-word;
-    }
-
-    #footer {
-        width: 90%;
-    }
 }

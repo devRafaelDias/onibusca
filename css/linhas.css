@@ -73,8 +73,9 @@ body {
 }
 
 #menu #logoImg {
-    width: 150px;
-    height: 110px;
+    margin: 1rem;
+    width: 100px;
+    height: 90px;
     justify-content: flex-start;
 }
 
@@ -103,7 +104,7 @@ body {
 }
 
 #menu p {
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 #main {

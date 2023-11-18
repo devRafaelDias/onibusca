@@ -13,7 +13,7 @@ html {
     color: #151018;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -47,12 +47,13 @@ body {
 }
 
 #menu ul {
+    position: relative;
     display: flex;
     width: 100%;
+    left: -1.5rem;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin-right: 4rem;
 }
 #meuPerfil {
     display: flex;
@@ -77,9 +78,16 @@ body {
     padding-left: 1rem;
 }
 
+#logo p {
+    padding-left: 5px;
+}
+
 #menu #logoImg {
-    width: 150px;
-    height: 110px;
+    position: relative;
+    left: 1.5rem;
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
     justify-content: flex-start;
 }
 
@@ -87,6 +95,7 @@ body {
     text-decoration: none;
     color: #151018;
     transition: .3s;
+    padding-left: .2rem;
     align-self: flex-end;
     font-family: 'Gotham';
     font-size: 2.4rem;
@@ -108,11 +117,11 @@ body {
 }
 
 #menu p {
-    margin: -30px;
+    margin: 5px;
 }
 
 #main {
-    padding: 6rem;
+    padding: 4rem 6rem 3rem 6rem;
     display: flex;
     flex-direction: column;
 }
@@ -144,13 +153,9 @@ body {
     display: flex;
 }
 
-#userInfo {
-    margin-bottom: 3rem;
-}
-
-#userInfo #maleta {
-    height: 40px;
-    padding-right: 5px;
+#location {
+    width: 40px;
+    margin-top: -4rem;
 }
 
 #sobreMim {
@@ -163,40 +168,29 @@ body {
     height: 100%;
     background-color: #E6E2E2;
     border-radius: 2.2rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 #sobreMim p {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #dadosPessoais {
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 
 #dadosPessoais p {
     display: flex;
 }
 
-#dadosPessoais:nth-child(2) p{
-    margin-top: 2rem;
-}
-
 #main #mailPng {
-    width: 40px;
-    height: 50px;
-    vertical-align: top;
-    margin-right: 5px;
-}
-
-#main #telefonePng {
     width: 40px;
     height: 45px;
     vertical-align: top;
     margin-right: 5px;
 }
 
-#btnAvaliar {
+#btnEditar {
     position: relative;
     background-color: #3c554f;
     color: #fff;
@@ -207,17 +201,18 @@ body {
     border: none;
     border-radius: 2.5rem;
     align-self: center;
+    text-wrap: nowrap;
     bottom: 0;
     margin-top: 4rem;
-    text-wrap: nowrap;
-    width: max-content;
+    width: 20%;
     transition: .3s;
     cursor: pointer;
     box-shadow: 1px 2px 2px #151018;
 }
 
-#btnAvaliar:hover {
+#btnEditar:hover {
     transition: .3s;
+    width: 22%;
     box-shadow: 1px 2px 2px #3c554f;
 }
 
