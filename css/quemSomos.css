@@ -65,7 +65,7 @@ body {
 }
 
 #menu ul {
-    margin-left: -3rem;
+    margin-left: -5rem;
 }
 
 #menu ul li {
@@ -77,9 +77,10 @@ body {
 }
 
 #menu #logoImg {
-    margin-left: -2rem;
+    margin-top: 5px;
+    margin-left: 2rem;
     width: 80px;
-    height: 20px;
+    height: 100px;
     justify-content: flex-start;
 }
 
@@ -107,7 +108,7 @@ body {
 }
 
 #menu p {
-    margin: -40px;
+    margin: -10px;
 }
 
 #main {
